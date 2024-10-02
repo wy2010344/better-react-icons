@@ -797,4 +797,37 @@ export const icons: IconDefinition[] = [
       hash: "78a101217707c9b1c4dcf2a821be75684e36307f",
     },
   },
+  {
+    id: "f7",
+    name: "Framework7 Icons",
+    contents: [
+      {
+        files: path.resolve(
+          __dirname,
+          "../../icons/framework7-icons/src/f7/*.svg",
+        ),
+        formatter: (name) => `F7${name}`,
+        multiColor: true,
+      },
+      {
+        files: path.resolve(
+          __dirname,
+          "../../icons/framework7-icons/src/sf/*.svg",
+        ),
+        formatter: (name) => `Sf${name}`,
+        multiColor: true,
+      },
+    ],
+    projectUrl: "https://github.com/framework7io/framework7-icons",
+    license: "MIT",
+    licenseUrl: "https://opensource.org/licenses/MIT",
+    source: {
+      type: "git",
+      localName: "framework7-icons",
+      remoteDir: "src/",
+      url: "https://github.com/framework7io/framework7-icons.git",
+      branch: "master",
+      hash: "352fd2d56f96aa5f3b3b6882b2f7555126eea16a",
+    },
+  }
 ];

@@ -4615,10 +4615,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@react-icons/all-files@workspace:packages/_react-icons_all-files"
   peerDependencies:
-    better-react: "*"
-    better-react-dom: "*"
-    wy-dom-helper: "*"
-    wy-helper: "*"
+    better-react: ^1.2.7
+    better-react-dom: ^1.2.7
+    better-react-helper: ^1.2.9
+    wy-dom-helper: ^0.1.7
+    wy-helper: ^0.1.8
   languageName: unknown
   linkType: soft
 
@@ -7491,10 +7492,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "better-react-icons@workspace:packages/_react-icons_all"
   peerDependencies:
-    better-react: "*"
-    better-react-dom: "*"
-    wy-dom-helper: "*"
-    wy-helper: "*"
+    better-react: ^1.2.7
+    better-react-dom: ^1.2.7
+    better-react-helper: ^1.2.9
+    wy-dom-helper: ^0.1.7
+    wy-helper: ^0.1.8
   languageName: unknown
   linkType: soft
 
