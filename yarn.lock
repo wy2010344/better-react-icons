@@ -4615,7 +4615,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@react-icons/all-files@workspace:packages/_react-icons_all-files"
   peerDependencies:
-    react: "*"
+    better-react: "*"
+    better-react-dom: "*"
+    wy-dom-helper: "*"
+    wy-helper: "*"
   languageName: unknown
   linkType: soft
 
@@ -7483,6 +7486,17 @@ __metadata:
   checksum: a1a2430976d9bdab4cd89cb50d27fa86b19e2b41812bf1315923b0cba03371ebca99449809226425dd3bcef20e010db61abdaff549278e111d6480034bebae87
   languageName: node
   linkType: hard
+
+"better-react-icons@workspace:packages/_react-icons_all":
+  version: 0.0.0-use.local
+  resolution: "better-react-icons@workspace:packages/_react-icons_all"
+  peerDependencies:
+    better-react: "*"
+    better-react-dom: "*"
+    wy-dom-helper: "*"
+    wy-helper: "*"
+  languageName: unknown
+  linkType: soft
 
 "bfj@npm:^7.0.2":
   version: 7.1.0
@@ -18595,13 +18609,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"react-icons@^5.2.1, react-icons@workspace:packages/_react-icons_all":
-  version: 0.0.0-use.local
-  resolution: "react-icons@workspace:packages/_react-icons_all"
+"react-icons@npm:^5.2.1":
+  version: 5.3.0
+  resolution: "react-icons@npm:5.3.0"
   peerDependencies:
     react: "*"
-  languageName: unknown
-  linkType: soft
+  checksum: 3aa5f50e05aafc6d31e0d995fe0d98560069aa88717b24ce8aaa082a7e7b20ca95e1e19d847ed6e52d658a5a30e15826af20d7554bf993a743edd55586db62e3
+  languageName: node
+  linkType: hard
 
 "react-icons_builders@workspace:packages/react-icons":
   version: 0.0.0-use.local
@@ -18631,7 +18646,11 @@ __metadata:
     svgo: ^3.0.3
     typescript: ^5.4.5
   peerDependencies:
-    react: "*"
+    better-react: ^1.2.7
+    better-react-dom: ^1.2.7
+    better-react-helper: ^1.2.9
+    wy-dom-helper: ^0.1.7
+    wy-helper: ^0.1.8
   languageName: unknown
   linkType: soft
 

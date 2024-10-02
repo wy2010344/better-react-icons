@@ -21,7 +21,11 @@
   },
   "homepage": "https://github.com/react-icons/react-icons#readme",
   "peerDependencies": {
-    "react": "*"
+    "better-react": "^1.2.7",
+    "better-react-dom": "^1.2.7",
+    "better-react-helper": "^1.2.9",
+    "wy-dom-helper": "^0.1.7",
+    "wy-helper": "^0.1.8"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.5",
