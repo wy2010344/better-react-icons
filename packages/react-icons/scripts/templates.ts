@@ -11,13 +11,13 @@ export function iconRowTemplate(
     case "module":
       return (
         `export function ${formattedName} (props) {\n` +
-        `  return GenIcon(${JSON.stringify(iconData)})(props);\n` +
+        `  return GenIcon(${JSON.stringify(iconData)},props);\n` +
         `};\n`
       );
     case "common":
       return (
         `module.exports.${formattedName} = function ${formattedName} (props) {\n` +
-        `  return GenIcon(${JSON.stringify(iconData)})(props);\n` +
+        `  return GenIcon(${JSON.stringify(iconData)},props);\n` +
         `};\n`
       );
     case "dts":

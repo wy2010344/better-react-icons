@@ -3,7 +3,7 @@ import camelcase from "camelcase";
 import { type IconDefinition } from "../../scripts/_types";
 import { glob } from "../../scripts/glob";
 
-export const icons: IconDefinition[] = [
+export let icons: IconDefinition[] = [
   {
     id: "ci",
     name: "Circum Icons",
@@ -831,3 +831,4 @@ export const icons: IconDefinition[] = [
     },
   }
 ];
+// icons = icons.slice(0, 1)
