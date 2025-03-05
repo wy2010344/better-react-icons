@@ -1,5 +1,5 @@
 {
-  "name": "better-react-icons",
+  "name": "mve-icons",
   "version": "5.5.0",
   "description": "SVG React icons of popular icon packs using ES6 imports",
   "author": "Goran Gajic",
@@ -20,9 +20,7 @@
   },
   "homepage": "https://github.com/react-icons/react-icons#readme",
   "peerDependencies": {
-    "better-react": "^1.2.7",
-    "better-react-dom": "^1.2.7",
-    "better-react-helper": "^1.2.9",
+    "mve-core": "^2.0.0",
     "wy-dom-helper": "^0.1.7",
     "wy-helper": "^0.1.8"
   },

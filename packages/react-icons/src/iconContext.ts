@@ -1,4 +1,4 @@
-import { createContext } from 'better-react'
+import { createContext } from 'mve-core'
 import { EmptyFun } from 'wy-helper';
 export type RenderItem = (
   tag: string,
@@ -10,7 +10,9 @@ export interface IconContext {
   renderRoot: RenderRoot
 }
 export type RenderRoot = (
-  attrs: Record<string, string>,
+  attrs: {
+    viewBox: string
+  },
   children: EmptyFun
 ) => void
 export const DefaultContext: IconContext = {

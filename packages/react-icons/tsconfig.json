@@ -13,7 +13,7 @@
     "baseUrl": ".",
     "declaration": true,
     "strict": true,
-    "noImplicitAny": true
+    // "noImplicitAny": true
   },
   "include": [
     "src/**/*.tsx",

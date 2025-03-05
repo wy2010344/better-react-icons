@@ -81,7 +81,7 @@ export async function writeIconModuleFiles(
       );
       const dtsRes = iconRowTemplate(icon, name, iconData, "dts");
       const dtsHeader =
-        "// THIS FILE IS AUTO GENERATED\nimport { IconTree, IconType } from '../lib/index.mjs'\n";
+        "// THIS FILE IS AUTO GENERATED\nimport { IconType } from '../lib/index.mjs'\n";
       await fs.writeFile(
         path.resolve(DIST, icon.id, `${name}.d.ts`),
         dtsHeader + dtsRes,

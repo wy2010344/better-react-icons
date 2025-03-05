@@ -3,7 +3,7 @@ import camelcase from "camelcase";
 import { type IconDefinition } from "../../scripts/_types";
 import { glob } from "../../scripts/glob";
 
-export let icons: IconDefinition[] = [
+export const icons: IconDefinition[] = [
   {
     id: "ci",
     name: "Circum Icons",
@@ -177,7 +177,7 @@ export let icons: IconDefinition[] = [
       remoteDir: "src/",
       url: "https://github.com/google/material-design-icons.git",
       branch: "master",
-      hash: "ef43291c4d6ebbada3f46e1f584c39bc8f6861b2",
+      hash: "dea78f8ed9181a3f9ca95b67ba454fb91b71a897",
     },
   },
   {
@@ -410,7 +410,7 @@ export let icons: IconDefinition[] = [
       remoteDir: "icons/",
       url: "https://github.com/Remix-Design/RemixIcon.git",
       branch: "master",
-      hash: "c1c01303b97f81bce88374220e08c3d80c9f241a",
+      hash: "8bc436bdd329cf342958d8effdd078bfa74354c6",
     },
   },
   {
@@ -827,7 +827,7 @@ export let icons: IconDefinition[] = [
       remoteDir: "src/",
       url: "https://github.com/framework7io/framework7-icons.git",
       branch: "master",
-      hash: "352fd2d56f96aa5f3b3b6882b2f7555126eea16a",
+      hash: "7fb38494ba82cbef74d4f7e725431544c8ea1ee5",
     },
   }
 ];

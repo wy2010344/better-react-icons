@@ -13,8 +13,8 @@ function Tree2Element(items: IconTree[], renderItem: RenderItem) {
   })
 }
 export function GenIcon(data: IconTree, renderRoot?: RenderRoot) {
-  const { renderItem, renderRoot: pRenderRoot } = IconContext.useConsumer();
-  (renderRoot || pRenderRoot)(data.attr, () => {
+  const { renderItem, renderRoot: pRenderRoot } = IconContext.consume();
+  (renderRoot || pRenderRoot)(data.attr as any, () => {
     Tree2Element(data.child, renderItem)
   })
 }

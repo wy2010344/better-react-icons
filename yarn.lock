@@ -4790,9 +4790,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@react-icons/all-files@workspace:packages/_react-icons_all-files"
   peerDependencies:
-    better-react: ^1.2.7
-    better-react-dom: ^1.2.7
-    better-react-helper: ^1.2.9
+    mve-core: ^2.0.0
     wy-dom-helper: ^0.1.7
     wy-helper: ^0.1.8
   languageName: unknown
@@ -7667,49 +7665,6 @@ __metadata:
   version: 2.2.3
   resolution: "before-after-hook@npm:2.2.3"
   checksum: a1a2430976d9bdab4cd89cb50d27fa86b19e2b41812bf1315923b0cba03371ebca99449809226425dd3bcef20e010db61abdaff549278e111d6480034bebae87
-  languageName: node
-  linkType: hard
-
-"better-react-dom@npm:^1.2.7":
-  version: 1.2.7
-  resolution: "better-react-dom@npm:1.2.7"
-  peerDependencies:
-    better-react: ^1.2.7
-    better-react-helper: ^1.2.9
-    wy-dom-helper: ^0.1.7
-    wy-helper: ^0.1.8
-  checksum: b9a18a5390b9c181fddcc11df8c1796e6a750089aa0130c733795259e5c015a6ab2e3c41b03f7a3561420de6bdb8c2cad5c7edbe850ae323a84ffe75e0208eb2
-  languageName: node
-  linkType: hard
-
-"better-react-helper@npm:^1.2.9":
-  version: 1.2.9
-  resolution: "better-react-helper@npm:1.2.9"
-  peerDependencies:
-    better-react: ^1.2.7
-    wy-helper: ^0.1.8
-  checksum: a5c2d900f3551d38dee8c4f4e32b062394544756c09d91fffdbf5c1279f23003336db69265e82192b33a1a20309080e6a8e71480a9fc7ea6383507e8d55fc657
-  languageName: node
-  linkType: hard
-
-"better-react-icons@workspace:packages/_react-icons_all":
-  version: 0.0.0-use.local
-  resolution: "better-react-icons@workspace:packages/_react-icons_all"
-  peerDependencies:
-    better-react: ^1.2.7
-    better-react-dom: ^1.2.7
-    better-react-helper: ^1.2.9
-    wy-dom-helper: ^0.1.7
-    wy-helper: ^0.1.8
-  languageName: unknown
-  linkType: soft
-
-"better-react@npm:^1.2.7":
-  version: 1.2.7
-  resolution: "better-react@npm:1.2.7"
-  peerDependencies:
-    wy-helper: ^0.1.8
-  checksum: a1250638d4a9d5498a5577272a299fa4e67be93c32e2d6fbac5885745daa2164c0f73da0279635c3ed656ec147140aa9fe988b3b52425bce2d708401472de01f
   languageName: node
   linkType: hard
 
@@ -16292,6 +16247,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mve-core@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "mve-core@npm:2.0.0"
+  dependencies:
+    wy-helper: ^0.1.11
+  peerDependencies:
+    wy-helper: ^0.1.11
+  checksum: 0605cf36b3ce1d2e56218999e2830c21ad48206ed4c3ae1af04a035b12d17bf139bbaa64f450426ce0e1ca27ba1012483194a77086cf042a7d6dcde980afacf4
+  languageName: node
+  linkType: hard
+
+"mve-icons@workspace:packages/_react-icons_all":
+  version: 0.0.0-use.local
+  resolution: "mve-icons@workspace:packages/_react-icons_all"
+  peerDependencies:
+    mve-core: ^2.0.0
+    wy-dom-helper: ^0.1.7
+    wy-helper: ^0.1.8
+  languageName: unknown
+  linkType: soft
+
 "mz@npm:^2.7.0":
   version: 2.7.0
   resolution: "mz@npm:2.7.0"
@@ -18977,9 +18953,6 @@ __metadata:
     "@types/node": ^20.12.7
     "@types/react": ^18.3.1
     babel-plugin-add-import-extension: ^1.6.0
-    better-react: ^1.2.7
-    better-react-dom: ^1.2.7
-    better-react-helper: ^1.2.9
     camelcase: ^8.0.0
     cheerio: ^1.0.0-rc.12
     esbuild: ^0.25.0
@@ -18991,15 +18964,14 @@ __metadata:
     ionicons: ^4.6.3
     ionicons-5: "npm:ionicons@5"
     lucide-static: ^0.462.0
+    mve-core: ^2.0.0
     p-queue: ^8.0.1
     svgo: ^3.0.3
     typescript: ^5.4.5
     wy-dom-helper: ^0.1.7
     wy-helper: ^0.1.8
   peerDependencies:
-    better-react: ^1.2.7
-    better-react-dom: ^1.2.7
-    better-react-helper: ^1.2.9
+    mve-core: ^2.0.0
     wy-dom-helper: ^0.1.7
     wy-helper: ^0.1.8
   languageName: unknown
@@ -23719,7 +23691,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wy-helper@npm:^0.1.13, wy-helper@npm:^0.1.8":
+"wy-helper@npm:^0.1.11, wy-helper@npm:^0.1.13, wy-helper@npm:^0.1.8":
   version: 0.1.13
   resolution: "wy-helper@npm:0.1.13"
   dependencies:
