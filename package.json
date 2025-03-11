@@ -26,5 +26,9 @@
     "version": "yarn install && git add .",
     "lerna": "lerna"
   },
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.2.4",
+  "dependencies": {
+    "mve-core": "^2.0.1",
+    "wy-helper": "^0.1.14"
+  }
 }

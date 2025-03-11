@@ -38,7 +38,7 @@ export async function dirInit({ DIST, LIB, rootDir }: TaskContext) {
     );
     await write(
       [icon.id, "index.d.ts"],
-      "// THIS FILE IS AUTO GENERATED\nimport type { IconType } from '../lib/index'\n",
+      "// THIS FILE IS AUTO GENERATED\nimport type { EmptyFun } from 'wy-helper';\n",
     );
     await write(
       [icon.id, "package.json"],

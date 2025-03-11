@@ -20,8 +20,7 @@
   },
   "homepage": "https://github.com/react-icons/react-icons#readme",
   "peerDependencies": {
-    "mve-core": "^2.0.0",
-    "wy-dom-helper": "^0.1.7",
-    "wy-helper": "^0.1.8"
+    "mve-core": "^2.0.1",
+    "wy-helper": "^0.1.14"
   }
 }
