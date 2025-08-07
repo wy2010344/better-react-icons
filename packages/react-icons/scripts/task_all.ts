@@ -38,7 +38,11 @@ export async function dirInit({ DIST, LIB, rootDir }: TaskContext) {
     );
     await write(
       [icon.id, "index.d.ts"],
-      "// THIS FILE IS AUTO GENERATED\nimport type { EmptyFun } from 'wy-helper';\n",
+      `
+//THIS FILE IS AUTO GENERATED
+import type { EmptyFun } from 'wy-helper';
+import type { IconInfo,SvgAttrInfo } from '../lib/iconBase'
+`.trimStart(),
     );
     await write(
       [icon.id, "package.json"],
@@ -83,19 +87,19 @@ export async function writeIconModule(
       exists.add(name);
 
       // write like: module/fa/index.mjs
-      const modRes = iconRowTemplate(icon, name, iconData, "module");
+      const modRes = iconRowTemplate(icon, name, iconData, rawName, "module");
       await fs.appendFile(
         path.resolve(DIST, icon.id, "index.mjs"),
         modRes,
         "utf8",
       );
-      const comRes = iconRowTemplate(icon, name, iconData, "common");
+      const comRes = iconRowTemplate(icon, name, iconData, rawName, "common");
       await fs.appendFile(
         path.resolve(DIST, icon.id, "index.js"),
         comRes,
         "utf8",
       );
-      const dtsRes = iconRowTemplate(icon, name, iconData, "dts");
+      const dtsRes = iconRowTemplate(icon, name, iconData, rawName, "dts");
       await fs.appendFile(
         path.resolve(DIST, icon.id, "index.d.ts"),
         dtsRes,

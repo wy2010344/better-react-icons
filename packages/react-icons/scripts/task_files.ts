@@ -63,7 +63,7 @@ export async function writeIconModuleFiles(
       exists.add(name);
 
       // write like: module/fa/FaBeer.mjs
-      const modRes = iconRowTemplate(icon, name, iconData, "module");
+      const modRes = iconRowTemplate(icon, name, iconData, rawName, "module");
       const modHeader =
         "// THIS FILE IS AUTO GENERATED\nimport { GenIcon } from '../lib/index.mjs';\n";
       await fs.writeFile(
@@ -71,7 +71,7 @@ export async function writeIconModuleFiles(
         modHeader + modRes,
         "utf8",
       );
-      const comRes = iconRowTemplate(icon, name, iconData, "common");
+      const comRes = iconRowTemplate(icon, name, iconData, rawName, "common",);
       const comHeader =
         "// THIS FILE IS AUTO GENERATED\nvar GenIcon = require('../lib').GenIcon\n";
       await fs.writeFile(
@@ -79,9 +79,12 @@ export async function writeIconModuleFiles(
         comHeader + comRes,
         "utf8",
       );
-      const dtsRes = iconRowTemplate(icon, name, iconData, "dts");
-      const dtsHeader =
-        "// THIS FILE IS AUTO GENERATED\nimport { EmptyFun } from 'wy-helper';'\n";
+      const dtsRes = iconRowTemplate(icon, name, iconData, rawName, "dts",);
+      const dtsHeader = `
+//THIS FILE IS AUTO GENERATED
+import type { EmptyFun } from 'wy-helper';
+import type { IconInfo,SvgAttrInfo } from '../lib/iconBase'
+`.trimStart()
       await fs.writeFile(
         path.resolve(DIST, icon.id, `${name}.d.ts`),
         dtsHeader + dtsRes,

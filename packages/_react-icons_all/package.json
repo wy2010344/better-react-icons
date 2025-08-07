@@ -227,6 +227,12 @@
       "require": "./f7/index.js",
       "import": "./f7/index.mjs",
       "default": "./f7/index.mjs"
+    },
+    "./td": {
+      "types": "./td/index.d.ts",
+      "require": "./td/index.js",
+      "import": "./td/index.mjs",
+      "default": "./td/index.mjs"
     }
   }
 }

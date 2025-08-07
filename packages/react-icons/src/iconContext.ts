@@ -1,5 +1,6 @@
 import { createContext } from 'mve-core'
 import { EmptyFun } from 'wy-helper';
+import { IconInfo, SvgAttrInfo } from './iconBase';
 export type RenderItem = (
   tag: string,
   attrs: Record<string, string>,
@@ -10,15 +11,10 @@ export interface IconContext {
   renderRoot: RenderRoot
 }
 export type RenderRoot = (
-  attrs: {
-    viewBox: string
-  },
+  fun: IconInfo,
+  attrs: SvgAttrInfo,
   children: EmptyFun
 ) => void
-export const DefaultContext: IconContext = {
-  renderItem: null as any,
-  renderRoot: null as any
-};
+export const DefaultContext: IconContext = {} as any;
 
-export const IconContext =
-  createContext && createContext(DefaultContext);
+export const IconContext = createContext<IconContext>(DefaultContext);

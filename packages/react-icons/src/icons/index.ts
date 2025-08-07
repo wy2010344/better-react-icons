@@ -829,6 +829,29 @@ export const icons: IconDefinition[] = [
       branch: "master",
       hash: "7fb38494ba82cbef74d4f7e725431544c8ea1ee5",
     },
-  }
+  },
+  {
+    id: "td",
+    name: "TDesign Icons",
+    contents: [
+      {
+        files: path.resolve(__dirname, "../../icons/tdesign-icons/svg/*.svg"),
+        formatter: (name) => `Td${name}`,
+      },
+    ],
+    projectUrl: "https://tdesign.tencent.com/design/icon",
+    license: "MIT",
+    licenseUrl: "https://github.com/Tencent/tdesign-icons/blob/main/LICENSE",
+    source: {
+      type: "git",
+      localName: "tdesign-icons",
+      remoteDir: "svg/",
+      url: "https://github.com/Tencent/tdesign-icons.git",
+      branch: "main",
+      hash: "2799a9aa67893a867e8afc05790aa6bf01095fe5",
+    },
+  },
 ];
-// icons = icons.slice(0, 1)
+// while (icons.length > 1) {
+//   icons.shift()
+// }

@@ -12,9 +12,15 @@ function Tree2Element(items: IconTree[], renderItem: RenderItem) {
     })
   })
 }
-export function GenIcon(data: IconTree, renderRoot: any, value: any) {
+export interface SvgAttrInfo {
+  viewBox: string
+}
+export interface IconInfo {
+  iconName: string
+}
+export function GenIcon(fun: any, data: IconTree, renderRoot: any, value: any) {
   const { renderItem, renderRoot: pRenderRoot } = IconContext.consume();
-  (renderRoot || pRenderRoot)(data.attr as any, () => {
+  (renderRoot || pRenderRoot)(fun, data.attr as any, () => {
     Tree2Element(data.child, renderItem)
   }, value)
 }
